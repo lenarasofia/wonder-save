@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wonder Save — Informação, apoio e direitos contra a violência doméstica. Você não está sozinha.">
+  <meta name="keywords" content="violência doméstica, direitos da mulher, apoio, Wonder Save, denúncia, proteção">
+  <meta name="author" content="Lenara e Emilly">
+  <title>Wonder Save — Informação • Apoio • Direitos</title>
+  <link rel="icon" href="assets/img/logo.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══ HEADER / NAVBAR ═══ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#inicio" class="logo" id="logo-link">
+        <img src="assets/img/logo.jpeg" alt="Wonder Save Logo" class="logo__img">
+        <div class="logo__text">
+          <span class="logo__name">Wonder Save</span>
+          <span class="logo__tagline">Informação • Apoio • Direitos</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav__list" id="nav-list">
+          <li><a href="#inicio" class="nav__link active" id="nav-inicio">Início</a></li>
+          <li><a href="#sobre" class="nav__link" id="nav-sobre">Sobre</a></li>
+          <li><a href="#sinais" class="nav__link" id="nav-sinais">Sinais</a></li>
+          <li><a href="#ajuda" class="nav__link" id="nav-ajuda">Ajuda</a></li>
+          <li><a href="#direitos" class="nav__link" id="nav-direitos">Direitos</a></li>
+          <li>
+            <a href="#ajuda" class="btn btn--primary btn--cta-heart" id="btn-peca-ajuda">
+              <span class="btn__heart">♥</span>
+              Peça ajuda
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══ MOBILE NAV OVERLAY ═══ -->
+  <div class="nav-overlay" id="nav-overlay">
+    <button class="nav-overlay__close" id="nav-close" aria-label="Fechar menu">✕</button>
+    <a href="#inicio" class="nav-overlay__link">Início</a>
+    <a href="#sobre" class="nav-overlay__link">Sobre</a>
+    <a href="#sinais" class="nav-overlay__link">Sinais</a>
+    <a href="#ajuda" class="nav-overlay__link">Ajuda</a>
+    <a href="#direitos" class="nav-overlay__link">Direitos</a>
+    <a href="#ajuda" class="btn btn--primary" style="margin-top:1rem;">♥ Peça ajuda</a>
+  </div>
+
+  <!-- ═══ HERO SECTION ═══ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="assets/img/hero-bg.jpg" alt="Imagem de conscientização sobre violência doméstica" loading="eager">
+    </div>
+
+    <!-- Floating heart doodle -->
+    <div class="hero__doodle" aria-hidden="true">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 56 C32 56, 8 40, 8 24 C8 14, 16 8, 24 8 C28 8, 32 12, 32 12 C32 12, 36 8, 40 8 C48 8, 56 14, 56 24 C56 40, 32 56, 32 56Z" />
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Violência doméstica
+          <span>não é amor.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Você merece respeito, segurança e ser livre.
+        </p>
+        <a href="#sobre" class="btn btn--outline" id="btn-saiba-mais">
+          Saiba mais
+          <span class="btn__icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ QUICK-LINKS SECTION ═══ -->
+  <section class="quick-links" id="quick-links">
+    <div class="container">
+      <div class="quick-links__grid">
+
+        <a href="#sobre" class="quick-card animate-on-scroll" id="qlink-oque">
+          <div class="quick-card__icon">🏠</div>
+          <h3 class="quick-card__title">O que é?</h3>
+          <span class="quick-card__arrow">→</span>
+        </a>
+
+        <a href="#sinais" class="quick-card animate-on-scroll" id="qlink-sinais">
+          <div class="quick-card__icon">⚠️</div>
+          <h3 class="quick-card__title">Sinais de alerta</h3>
+          <span class="quick-card__arrow">→</span>
+        </a>
+
+        <a href="#ajuda" class="quick-card animate-on-scroll" id="qlink-ajuda">
+          <div class="quick-card__icon">📞</div>
+          <h3 class="quick-card__title">Onde buscar ajuda</h3>
+          <span class="quick-card__arrow">→</span>
+        </a>
+
+        <a href="#direitos" class="quick-card animate-on-scroll" id="qlink-direitos">
+          <div class="quick-card__icon">📋</div>
+          <h3 class="quick-card__title">Seus direitos</h3>
+          <span class="quick-card__arrow">→</span>
+        </a>
+
+        <a href="#impacto" class="quick-card animate-on-scroll" id="qlink-naosozinha">
+          <div class="quick-card__icon">💜</div>
+          <h3 class="quick-card__title">Você não está sozinha</h3>
+          <span class="quick-card__arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOBRE (About) ═══ -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Entenda</span>
+        <h2 class="section-title">O que é a violência doméstica?</h2>
+        <p class="section-subtitle">
+          A violência doméstica é qualquer ação ou omissão que cause morte, lesão, sofrimento físico, sexual ou psicológico à mulher no âmbito doméstico.
+        </p>
+      </div>
+
+      <div class="sobre__grid">
+        <div class="sobre__content animate-on-scroll">
+          <p class="sobre__text">
+            A <strong>Lei Maria da Penha (Lei nº 11.340/2006)</strong> define violência doméstica e familiar contra a mulher como qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial.
+          </p>
+          <p class="sobre__text">
+            A violência contra a mulher pode se manifestar de diversas formas, desde agressões físicas visíveis até manipulações emocionais sutis que destroem a autoestima e a autonomia da vítima.
+          </p>
+          <p class="sobre__text">
+            <strong>Romper o ciclo da violência é possível.</strong> Informação e apoio são os primeiros passos para a liberdade.
+          </p>
+
+          <div class="sobre__stats">
+            <div class="stat">
+              <div class="stat__number">1 em 3</div>
+              <div class="stat__label">mulheres no mundo já sofreu violência</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">75%</div>
+              <div class="stat__label">das agressões são cometidas por parceiros</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">180</div>
+              <div class="stat__label">Disque para denunciar 24h</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre__visual animate-on-scroll">
+          <div class="sobre__image-wrapper">
+            <img src="assets/img/flower.jpg" alt="Ilustração de flor simbolizando esperança e renascimento">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TIPOS (Types of Violence) ═══ -->
+  <section class="tipos" id="tipos">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Tipos</span>
+        <h2 class="section-title">Formas de violência</h2>
+        <p class="section-subtitle">
+          Reconhecer os diferentes tipos de violência é essencial para identificar a situação e buscar ajuda.
+        </p>
+      </div>
+
+      <div class="tipos__grid">
+
+        <div class="tipo-card animate-on-scroll" id="tipo-fisica">
+          <div class="tipo-card__icon">💔</div>
+          <h3 class="tipo-card__title">Violência Física</h3>
+          <p class="tipo-card__desc">
+            Qualquer conduta que ofenda a integridade ou saúde corporal da mulher: empurrões, tapas, socos, queimaduras, entre outros atos de agressão.
+          </p>
+        </div>
+
+        <div class="tipo-card animate-on-scroll" id="tipo-psicologica">
+          <div class="tipo-card__icon">🧠</div>
+          <h3 class="tipo-card__title">Violência Psicológica</h3>
+          <p class="tipo-card__desc">
+            Ameaças, constrangimento, humilhação, manipulação, isolamento, chantagem, ridicularização e vigilância constante que prejudicam a saúde mental.
+          </p>
+        </div>
+
+        <div class="tipo-card animate-on-scroll" id="tipo-sexual">
+          <div class="tipo-card__icon">🚫</div>
+          <h3 class="tipo-card__title">Violência Sexual</h3>
+          <p class="tipo-card__desc">
+            Qualquer conduta que constranja a mulher a presenciar, manter ou participar de relação sexual não desejada, mediante intimidação ou uso da força.
+          </p>
+        </div>
+
+        <div class="tipo-card animate-on-scroll" id="tipo-patrimonial">
+          <div class="tipo-card__icon">💰</div>
+          <h3 class="tipo-card__title">Violência Patrimonial</h3>
+          <p class="tipo-card__desc">
+            Retenção, subtração ou destruição de objetos, instrumentos de trabalho, documentos pessoais, bens, valores e recursos econômicos.
+          </p>
+        </div>
+
+        <div class="tipo-card animate-on-scroll" id="tipo-moral">
+          <div class="tipo-card__icon">🗣️</div>
+          <h3 class="tipo-card__title">Violência Moral</h3>
+          <p class="tipo-card__desc">
+            Calúnia, difamação ou injúria — atitudes que ferem a honra e a imagem da mulher perante a sociedade.
+          </p>
+        </div>
+
+        <div class="tipo-card animate-on-scroll" id="tipo-virtual">
+          <div class="tipo-card__icon">📱</div>
+          <h3 class="tipo-card__title">Violência Virtual</h3>
+          <p class="tipo-card__desc">
+            Exposição de imagens íntimas, perseguição online, ameaças por redes sociais e controle digital que amplifica o ciclo da violência.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SINAIS (Warning Signs) ═══ -->
+  <section class="sinais" id="sinais">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Atenção</span>
+        <h2 class="section-title">Sinais de alerta</h2>
+        <p class="section-subtitle">
+          Fique atenta a esses comportamentos. Reconhecê-los é o primeiro passo para se proteger.
+        </p>
+      </div>
+
+      <div class="sinais__list">
+
+        <div class="sinal-item animate-on-scroll">
+          <div class="sinal-item__icon">🔒</div>
+          <div class="sinal-item__text">
+            <strong>Isolamento social</strong>
+            Impede contato com família e amigos, controla com quem você conversa e aonde vai.
+          </div>
+        </div>
+
+        <div class="sinal-item animate-on-scroll">
+          <div class="sinal-item__icon">😡</div>
+          <div class="sinal-item__text">
+            <strong>Ciúme excessivo</strong>
+            Apresenta reações desproporcionais, acusa sem motivo e controla suas roupas e comportamento.
+          </div>
+        </div>
+
+        <div class="sinal-item animate-on-scroll">
+          <div class="sinal-item__icon">💬</div>
+          <div class="sinal-item__text">
+            <strong>Humilhações constantes</strong>
+            Diminui suas conquistas, critica sua aparência e faz piadas ofensivas em público.
+          </div>
+        </div>
+
+        <div class="sinal-item animate-on-scroll">
+          <div class="sinal-item__icon">💸</div>
+          <div class="sinal-item__text">
+            <strong>Controle financeiro</strong>
+            Controla seu dinheiro, impede que trabalhe e não permite acesso às finanças do casal.
+          </div>
+        </div>
+
+        <div class="sinal-item animate-on-scroll">
+          <div class="sinal-item__icon">⚡</div>
+          <div class="sinal-item__text">
+            <strong>Explosões de raiva</strong>
+            Tem reações violentas por motivos banais, quebra objetos e cria um ambiente de medo constante.
+          </div>
+        </div>
+
+        <div class="sinal-item animate-on-scroll">
+          <div class="sinal-item__icon">🔄</div>
+          <div class="sinal-item__text">
+            <strong>Ciclo de perdão</strong>
+            Após agredir, pede desculpas, promete mudar, dá presentes — mas o comportamento violento se repete.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DIREITOS (Rights) ═══ -->
+  <section class="direitos" id="direitos">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Legislação</span>
+        <h2 class="section-title">Seus direitos</h2>
+        <p class="section-subtitle">
+          A lei está do seu lado. Conheça as proteções garantidas pela legislação brasileira.
+        </p>
+      </div>
+
+      <div class="direitos__grid">
+
+        <div class="direito-card animate-on-scroll">
+          <div class="direito-card__number">1</div>
+          <div class="direito-card__content">
+            <h3>Lei Maria da Penha</h3>
+            <p>A Lei nº 11.340/2006 cria mecanismos para coibir a violência doméstica e familiar contra a mulher, garantindo medidas protetivas de urgência.</p>
+          </div>
+        </div>
+
+        <div class="direito-card animate-on-scroll">
+          <div class="direito-card__number">2</div>
+          <div class="direito-card__content">
+            <h3>Medidas Protetivas</h3>
+            <p>Afastamento do agressor do lar, proibição de contato e aproximação, e encaminhamento a programas de proteção.</p>
+          </div>
+        </div>
+
+        <div class="direito-card animate-on-scroll">
+          <div class="direito-card__number">3</div>
+          <div class="direito-card__content">
+            <h3>Lei do Feminicídio</h3>
+            <p>A Lei nº 13.104/2015 qualifica o homicídio contra a mulher por razões de gênero como crime hediondo com penas mais severas.</p>
+          </div>
+        </div>
+
+        <div class="direito-card animate-on-scroll">
+          <div class="direito-card__number">4</div>
+          <div class="direito-card__content">
+            <h3>Assistência Jurídica Gratuita</h3>
+            <p>Toda mulher em situação de violência tem direito a assistência jurídica gratuita pela Defensoria Pública para todas as fases processuais.</p>
+          </div>
+        </div>
+
+        <div class="direito-card animate-on-scroll">
+          <div class="direito-card__number">5</div>
+          <div class="direito-card__content">
+            <h3>Registro de Ocorrência Online</h3>
+            <p>Em muitos estados é possível registrar boletim de ocorrência pela internet, facilitando a denúncia em situações de risco.</p>
+          </div>
+        </div>
+
+        <div class="direito-card animate-on-scroll">
+          <div class="direito-card__number">6</div>
+          <div class="direito-card__content">
+            <h3>Lei do Stalking</h3>
+            <p>A Lei nº 14.132/2021 tipifica o crime de perseguição (stalking), com pena de reclusão de 6 meses a 2 anos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AJUDA (Help / Support) ═══ -->
+  <section class="ajuda" id="ajuda">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Apoio</span>
+        <h2 class="section-title">Onde buscar ajuda</h2>
+      </div>
+
+      <div class="ajuda__banner animate-on-scroll">
+        <img src="assets/img/flower.jpg" alt="Ilustração floral" class="ajuda__flower">
+
+        <div class="ajuda__info">
+          <p class="ajuda__label">Precisa de ajuda?</p>
+          <h3 class="ajuda__title">Existem canais de apoio 24h.</h3>
+
+          <div class="ajuda__channels">
+            <div class="channel">
+              <div class="channel__icon">📞</div>
+              <div>
+                <div class="channel__name">Disque 180</div>
+                <div class="channel__desc">Central de Atendimento à Mulher</div>
+              </div>
+            </div>
+
+            <div class="channel">
+              <div class="channel__icon">🏛️</div>
+              <div>
+                <div class="channel__name">Delegacia da Mulher</div>
+                <div class="channel__desc">Mais próxima de você</div>
+              </div>
+            </div>
+
+            <div class="channel">
+              <div class="channel__icon">📍</div>
+              <div>
+                <div class="channel__name">Serviços de apoio</div>
+                <div class="channel__desc">CRAS, CREAS e casas-abrigo em todo o Brasil</div>
+              </div>
+            </div>
+
+            <div class="channel">
+              <div class="channel__icon">🚔</div>
+              <div>
+                <div class="channel__name">Disque 190</div>
+                <div class="channel__desc">Polícia Militar — Emergência</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ajuda__action">
+          <a href="https://www.gov.br/mdh/pt-br/navegue-por-temas/politicas-para-mulheres/ligue-180" 
+             class="btn btn--primary" id="btn-acessar-canais" target="_blank" rel="noopener">
+            Acessar canais
+            <span class="btn__icon">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ IMPACTO (Impact on Society) ═══ -->
+  <section class="impacto" id="impacto">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Sociedade</span>
+        <h2 class="section-title">Como a violência afeta a todos</h2>
+      </div>
+
+      <div class="impacto__content animate-on-scroll">
+        <p class="impacto__text">
+          A violência doméstica não é um problema privado — é uma questão de saúde pública que afeta toda a sociedade. Seus efeitos ultrapassam o ambiente familiar e impactam a economia, a educação, a saúde mental coletiva e as gerações futuras.
+        </p>
+
+        <blockquote class="impacto__quote">
+          "A violência contra a mulher é talvez a mais vergonhosa violação dos direitos humanos. Ela não conhece limites geográficos, culturais ou de riqueza."
+          <br><small style="color: var(--clr-text-muted); font-style: normal; font-size: 0.85rem;">— Kofi Annan, ex-Secretário-Geral da ONU</small>
+        </blockquote>
+      </div>
+
+      <div class="impacto__cards">
+
+        <div class="impacto-card animate-on-scroll">
+          <div class="impacto-card__icon">👨‍👩‍👧‍👦</div>
+          <h3 class="impacto-card__title">Impacto nas Famílias</h3>
+          <p class="impacto-card__desc">
+            Crianças expostas à violência têm maior probabilidade de desenvolver traumas, dificuldades escolares e repetir o ciclo na vida adulta.
+          </p>
+        </div>
+
+        <div class="impacto-card animate-on-scroll">
+          <div class="impacto-card__icon">💼</div>
+          <h3 class="impacto-card__title">Impacto Econômico</h3>
+          <p class="impacto-card__desc">
+            A violência doméstica custa bilhões ao sistema de saúde, justiça e assistência social, além de reduzir a produtividade econômica.
+          </p>
+        </div>
+
+        <div class="impacto-card animate-on-scroll">
+          <div class="impacto-card__icon">🧩</div>
+          <h3 class="impacto-card__title">Impacto na Saúde Mental</h3>
+          <p class="impacto-card__desc">
+            Vítimas sofrem com depressão, ansiedade, TEPT e baixa autoestima, consequências que podem durar por toda a vida.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ O QUE FAZER (What To Do) ═══ -->
+  <section class="oque-fazer" id="oque-fazer">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Ação</span>
+        <h2 class="section-title">O que fazer em casos de violência?</h2>
+        <p class="section-subtitle">
+          Se você ou alguém que conhece está em situação de violência, siga esses passos.
+        </p>
+      </div>
+
+      <div class="steps">
+
+        <div class="step animate-on-scroll">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Reconheça a situação</h3>
+          <p class="step__desc">Identifique os sinais de violência. Nenhum tipo de agressão é aceitável ou justificável.</p>
+        </div>
+
+        <div class="step animate-on-scroll">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Procure um lugar seguro</h3>
+          <p class="step__desc">Se possível, vá para a casa de alguém de confiança ou um local protegido.</p>
+        </div>
+
+        <div class="step animate-on-scroll">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Ligue 180 ou 190</h3>
+          <p class="step__desc">Denuncie ligando para a Central de Atendimento à Mulher ou Polícia Militar.</p>
+        </div>
+
+        <div class="step animate-on-scroll">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Registre a ocorrência</h3>
+          <p class="step__desc">Vá a uma Delegacia da Mulher e solicite medidas protetivas de urgência.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <img src="assets/img/logo.jpeg" alt="Wonder Save" class="footer__logo">
+        <div class="footer__text">
+          <span class="footer__name">Wonder Save</span>
+          <span class="footer__desc">Informação • Apoio • Direitos</span>
+        </div>
+      </div>
+
+      <div class="footer__social">
+        <a href="#" class="social-icon" aria-label="Instagram" id="social-instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="5"></circle>
+            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="YouTube" id="social-youtube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Apoio" id="social-heart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer__motto">Juntas somos mais fortes.</p>
+    </div>
+  </footer>
+
+  <!-- ═══ JAVASCRIPT ═══ -->
+  <script src="script.js"></script>
+</body>
+</html>
